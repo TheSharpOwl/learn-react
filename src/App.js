@@ -4,7 +4,7 @@ import React from 'react'
 
 export const App = () => {
   return (
-    <div className="Container">
+    <div className="container">
     <div>
         <Header />
     </div>
