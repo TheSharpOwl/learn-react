@@ -1,5 +1,5 @@
 # learn-react
-Just learning React I guess?
+Just learning React I guess...
 
 # my cheat sheet:
 
