@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 
 import Header from './Components/Header'
 import Tasks from './Components/Tasks'
@@ -20,12 +20,15 @@ export const App = () => {
       "reminder": true
     }
   ])
-  
+
+  const onDelete = (taskId) => (setTasks(tasks.filter((task) => (task.id !== taskId))))
+
   return (
     <div className="container">
       <div>
         <Header />
-        <Tasks tasks = {tasks} />
+        {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete = {onDelete}/>) : ('No tasks to show')}
+        
       </div>
     </div>
   )
