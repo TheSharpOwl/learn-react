@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Header from './Components/Header'
 import Tasks from './Components/Tasks'
+import AddTask from './Components/AddTask'
 
 export const App = () => {
   // setTasks returns the list and a function to set the state (it will be the whole new state because it's immutable)
@@ -23,13 +24,14 @@ export const App = () => {
 
   const onDelete = (taskId) => (setTasks(tasks.filter((task) => (task.id !== taskId))))
 
-  const toggleReminder = (taskId) => (setTasks(tasks.map((task) => (task.id === taskId ? {...task, reminder: !task.reminder}: task))))
+  const toggleReminder = (taskId) => (setTasks(tasks.map((task) => (task.id === taskId ? { ...task, reminder: !task.reminder } : task))))
 
   return (
     <div className="container">
       <div>
         <Header />
-        {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete = {onDelete} onToggle = {toggleReminder} />) : ('No tasks to show')}
+        <AddTask />
+        {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete={onDelete} onToggle={toggleReminder} />) : ('No tasks to show')}
       </div>
     </div>
   )
