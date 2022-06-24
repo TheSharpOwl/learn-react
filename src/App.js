@@ -22,6 +22,8 @@ export const App = () => {
     }
   ])
 
+  const addTask = (task) => {console.log(task)}
+
   const onDelete = (taskId) => (setTasks(tasks.filter((task) => (task.id !== taskId))))
 
   const toggleReminder = (taskId) => (setTasks(tasks.map((task) => (task.id === taskId ? { ...task, reminder: !task.reminder } : task))))
@@ -30,7 +32,7 @@ export const App = () => {
     <div className="container">
       <div>
         <Header />
-        <AddTask />
+        <AddTask onAdd = {addTask} />
         {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete={onDelete} onToggle={toggleReminder} />) : ('No tasks to show')}
       </div>
     </div>
