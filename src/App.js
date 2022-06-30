@@ -22,7 +22,10 @@ export const App = () => {
     }
   ])
 
-  const addTask = (task) => {console.log(task)}
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 1000) + 1
+    const newTask = {id, ...task} // TODO ask why id works here like this (is it because it is set first as in the structure or because of the var name or type?)
+    setTasks([...tasks, task])}
 
   const onDelete = (taskId) => (setTasks(tasks.filter((task) => (task.id !== taskId))))
 
