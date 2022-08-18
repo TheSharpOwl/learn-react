@@ -8,6 +8,12 @@ Just learning React I guess...
 * `.first.second` means has classes `first` and `second` at the same time
 * `.first,.second` means has class `first` or `second` (works for html attribute types too `div, p`)
 * we can mix different types of selectors at the same time: `div .first` (div and has a class first) [this works with id too]
+
+### Flex model in CSS:
+* Default is `0 1 auto` which are flex-grow, flex-shrink, flex-basis respectively.
+
+
+
 ## React snippets extension
 
 * `rafc` reactArrowFunctionComponent (will create one with the name of the file) but without export
