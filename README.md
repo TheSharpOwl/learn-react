@@ -11,6 +11,8 @@ Just learning React I guess...
 
 ### Flex model in CSS:
 * Default is `0 1 auto` which are flex-grow, flex-shrink, flex-basis respectively.
+* `flex-direction` is `row` by default (horizontal) and it can be made `column` (vertical).
+* `justify-content` is on the **main axis** while `align-items` is on the **cross axis**
 
 
 
