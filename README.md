@@ -14,6 +14,8 @@ Just learning React I guess...
 * `flex-direction` is `row` by default (horizontal) and it can be made `column` (vertical).
 * `justify-content` is on the **main axis** while `align-items` is on the **cross axis**
 
+#### Flex-box cheat-sheet:
+![cheat sheet](/css-flexbox-poster.png)
 
 
 ## React snippets extension
