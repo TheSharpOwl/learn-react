@@ -17,6 +17,14 @@ Just learning React I guess...
 #### Flex-box cheat-sheet:
 ![cheat sheet](/css-flexbox-poster.png)
 
+## Javascript
+
+* **Only single quotes** work for embedded expressions in the output:
+
+```js
+alert( `the result is ${1 + 2}` ); // the result is 3
+alert( "the result is ${1 + 2}" ); // the result is ${1 + 2} DOESN`T WORK
+```
 
 ## React snippets extension
 
