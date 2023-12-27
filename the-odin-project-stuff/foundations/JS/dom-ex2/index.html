@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+
+    function clickFunc(inputRef) {
+            val = inputRef.value
+            inputRef.value = ''            
+            spanElement = document.createElement('span')
+            delButtonElement = document.createElement('button')
+            liElement = document.createElement('li')
+
+            spanElement.innerHTML = val
+            delButtonElement.innerHTML = 'X'
+            liElement.appendChild(spanElement)
+            liElement.appendChild(delButtonElement)
+
+            oldListElement = document.querySelector('ul')
+            oldListElement.appendChild(liElement)
+            // TODO attach an event to the delete button
+            // TODO add text to the new added element
+
+        }
+
+        const addItemButton = document.querySelector('button')
+        inputRef = document.getElementById('item')
+        // passing a lambda here cause passing function with parameter does not work (nice JS ?!!)
+        addItemButton.addEventListener('click', () => clickFunc(inputRef))
+        ulRef = document.querySelector('ul')
+        inputRef = document.querySelector('input')
+        buttonRef = document.querySelector('button')
+    
+
+    </script>
+  </body>
+</html>

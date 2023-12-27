@@ -46,3 +46,7 @@ pElement.textContent = "WOW";
 // it changes yeah even after appending (because it's a reference)
 
 bodyElement.appendChild(divBlock);
+
+// the button notification part
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World");
