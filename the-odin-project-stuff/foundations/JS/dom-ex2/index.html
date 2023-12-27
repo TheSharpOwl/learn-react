@@ -46,9 +46,12 @@
 
             oldListElement = document.querySelector('ul')
             oldListElement.appendChild(liElement)
-            // TODO attach an event to the delete button
-            // TODO add text to the new added element
-
+            // e is the event, it will take the parent of the called (the list item) and remove it once we click the X
+            delButtonElement.addEventListener('click', (e) => {e.currentTarget.parentNode.remove();
+            document.getElementById('item').focus()}
+            )
+            // when we add something we should return to the input focus
+            document.getElementById('item').focus()
         }
 
         const addItemButton = document.querySelector('button')
