@@ -2,34 +2,48 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Recipes from './Recipes'
+
+
+function List(props) {
+  if(!props.animals) {
+    return <div>Loading...</div>;
+  }
+
+  if(props.animals.length === 0) {
+    return <div>There are no animals in the list !</div>;
+  }
+
+  return <ul>
+    {props.animals.map((animal) => {
+      return <li key={animal}>{animal}</li>
+    })}
+  </ul>
+}
+
+const recipes = [{
+  id: 'greek-salad',
+  name: 'Greek Salad',
+  ingredients: ['tomatoes', 'cucumber', 'onion', 'olives', 'feta']
+}, {
+  id: 'hawaiian-pizza',
+  name: 'Hawaiian Pizza',
+  ingredients: ['pizza crust', 'pizza sauce', 'mozzarella', 'ham', 'pineapple']
+}, {
+  id: 'hummus',
+  name: 'Hummus',
+  ingredients: ['chickpeas', 'olive oil', 'garlic cloves', 'lemon', 'tahini']
+}];
 
 function App() {
-  const [count, setCount] = useState(0)
+// const animals = ['camel', 'meow']
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+// return <div>
+//   <h1> Animals: </h1>
+//   <List animals={animals} />
+// </div>
+// https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key challenge 2
+return <Recipes recipes = {recipes} />
 }
 
 export default App
