@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Recipes from './Recipes'
+import Gallery from './Gallery'
 
 
 function List(props) {
@@ -43,7 +44,9 @@ function App() {
 //   <List animals={animals} />
 // </div>
 // https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key challenge 2
-return <Recipes recipes = {recipes} />
+// return <Recipes recipes = {recipes} />
+
+  return <Gallery />
 }
 
 export default App
