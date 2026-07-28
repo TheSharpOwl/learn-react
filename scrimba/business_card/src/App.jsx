@@ -1,8 +1,11 @@
+import './App.css'
+import Top from './components/Top.jsx'
+
 
 function App() {
   return (
-    <div>
-      <h1>Business Card</h1>
+    <div className="main">
+      <Top />
     </div>
   )
 }

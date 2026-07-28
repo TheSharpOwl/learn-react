@@ -1,0 +1,47 @@
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+
+.name {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Regular;
+    font-size: 18.8px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #F3BF99;
+}
+
+.website {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14.24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #F5F5F5;
+}
