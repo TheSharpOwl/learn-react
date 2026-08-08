@@ -1,0 +1,22 @@
+.bottom {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    max-width: 300px;
+    color: white;
+    text-align: left;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bottom-paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bottom-paragraph h3,
+.bottom-paragraph p {
+    margin: 0;
+}
