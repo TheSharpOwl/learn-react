@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: #161619;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    color: grey;
+}
