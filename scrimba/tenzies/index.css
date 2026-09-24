@@ -26,15 +26,18 @@ main {
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 1px;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
     column-gap: 1px;
-    justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 button {
-    color: off-white;
+    background-color: #FFFFFF;
+    color: #2B283A;
+    font-family: Karla, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
     border-radius: 10px;
     width: 50px;
     height: 50px;
