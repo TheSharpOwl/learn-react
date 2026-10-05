@@ -42,21 +42,51 @@ section.game-status {
 section.game-status > p {
     margin: 5px;
 }
+
 section.game-status > h2 {
     font-size: 1.25rem;
     margin: 5px
 }
 
-.programming-languages {
+section.language-chips {
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
     justify-content: center;
-    gap: 10px;
     max-width: 350px;
-    margin-inline: auto;
 }
 
-.programming-language {
-    border-radius: 4px;
-    padding: 2px;
+span.chip {
+    border-radius: 3px;
+    padding: 4.5px;
+}
+
+section.word {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 20px;
+}
+
+span.letter {
+    height: 40px;
+    width: 40px;
+    background-color: #323232;
+    color: #F9F4DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    border-bottom: 1px solid #F9F4DA;
+}
+
+word {
+    display: flex;
+}
+
+word > span.letter {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #323232;
+    border-bottom: 1px solid #F9F4DA;
 }
