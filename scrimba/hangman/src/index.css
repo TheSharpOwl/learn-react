@@ -79,3 +79,22 @@ section.word > span {
     border-bottom: 1px solid #F9F4DA;
     
 }
+
+section.all-letters {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    max-width: 350px;
+}
+
+button.letter-button {
+    height: 40px;
+    width: 40px;
+    background-color: #FCBA29;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
