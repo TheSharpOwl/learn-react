@@ -13,10 +13,50 @@ body {
     justify-content: center;
 }
 
-.main-start {
+header {
     text-align: center;
+}
+
+header > h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #F9F4DA;
+}
+
+header > p {
+    font-size: 0.875rem;
+    max-width: 350px;
+    color: #8E8E8E;
+}
+
+section.game-status {
+    background-color: #10A95B;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 1px;
+    align-items: center;
+    color: #F9F4DA;
+    border-radius: 4px;
+    margin-block: 30px;
+}
+
+section.game-status > p {
+    margin: 5px;
+}
+section.game-status > h2 {
+    font-size: 1.25rem;
+    margin: 5px
+}
+
+.programming-languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 350px;
+    margin-inline: auto;
+}
+
+.programming-language {
+    border-radius: 4px;
+    padding: 2px;
 }
